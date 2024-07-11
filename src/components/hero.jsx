@@ -10,7 +10,7 @@ const Hero = () => {
             backgroundPosition: ' center top', // centers the image
             backgroundRepeat: 'no-repeat' // prevents the image from repeating
         }}
-            className='h-screen z-10 w-full flex justify-center items-center'>
+            className='h-screen -translate-y-20 z-10 w-full flex justify-center items-center'>
 
             <div className='text-center z-10'>
                 <h1 className='text-[48px] font-bold'>
