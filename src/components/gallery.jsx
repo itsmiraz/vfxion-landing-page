@@ -20,32 +20,51 @@ const Gallery = () => {
     ]
 
     return (
-        <div className="pt-12 text-center pb-20">
-            <h2 className='text-[40px] font-semibold'>
-                Our Gallery
-            </h2>
-            <p className='text-2xl pt-6'>
-                Explore our portfolio of visually stunning VFX and CGI creations that showcase our commitment <br className='md:block hidden' /> to innovation and excellence.
-            </p>
+        <div id='gallery' className="pt-12 text-center pb-20">
+            <div className='px-4'>
+                <h2 className='text-[32px] md:text-[40px] font-semibold'>
+                    Our Gallery
+                </h2>
+                <p className='text-xl md:text-2xl pt-6'>
+                    Explore our portfolio of visually stunning VFX and CGI creations that showcase our commitment <br className='md:block hidden' /> to innovation and excellence.
+                </p>
+            </div>
 
 
             <div className="relative  z-30 mb-12 mt-20 overflow-hidden whitespace-nowrap w-full">
                 <div className='w-[271px] bg-gradient-to-r from-[#000000] to-[#000000]/0  left-0 absolute top-0 h-full z-40'>
 
                 </div>
-                <motion.div
-                    className="flex gap-x-8 items-center"
-                    animate={{ x: ['0%', '-50%'] }}
-                    style={{ width: '240%' }}
-                    transition={{ repeat: Infinity, duration: 30, ease: 'linear' }}
-                >
-                    {slides.map((item, i) => (
-                        <div key={i} className="w-[120px] rounded-[16px] overflow-hidden md:w-[292px]">
-                            <img src={item} alt="partner" className="w-[120px] md:w-[292px]" />
-                        </div>
-                    ))}
+                <div className='md:block hidden'>
+                    <motion.div
+                        className="flex gap-x-8 items-center"
+                        animate={{ x: ['0%', '-50%'] }}
+                        style={{ width: '240%' }}
+                        transition={{ repeat: Infinity, duration: 30, ease: 'linear' }}
+                    >
+                        {slides.map((item, i) => (
+                            <div key={i} className="w-[120px] rounded-[16px] overflow-hidden md:w-[292px]">
+                                <img src={item} alt="partner" className="w-[120px] md:w-[292px]" />
+                            </div>
+                        ))}
 
-                </motion.div>
+                    </motion.div>
+                </div>
+                <div className='md:hidden block'>
+                    <motion.div
+                        className="flex gap-x-8 items-center"
+                        animate={{ x: ['0%', '-50%'] }}
+                        style={{ width: '400%' }}
+                        transition={{ repeat: Infinity, duration: 30, ease: 'linear' }}
+                    >
+                        {slides.map((item, i) => (
+                            <div key={i} className="w-[220px] rounded-[16px] overflow-hidden ">
+                                <img src={item} alt="partner" className="w-[220px] " />
+                            </div>
+                        ))}
+
+                    </motion.div>
+                </div>
                 <div className='w-[271px] bg-gradient-to-r from-[#000000]/0 to-[#000000] right-0 absolute top-0 h-full z-40'>
 
                 </div>
