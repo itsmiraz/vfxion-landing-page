@@ -9,10 +9,10 @@ function App() {
   return (
     <div >
       <Hero />
-      <WhyChooseUs />
+      {/* <WhyChooseUs />
       <Gallery />
       <Pricing />
-      <AboutUs />
+      <AboutUs /> */}
     </div>
   )
 }
