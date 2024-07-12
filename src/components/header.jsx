@@ -3,7 +3,7 @@ import logo from '../assets/logos/logo.png'
 
 const Header = () => {
     return (
-        <div className='sticky  z-50 top-9 bg-white/10 w-[984px] mx-auto py-3 flex justify-center items-center rounded-full'>
+        <div className='sticky backdrop-blur-md  z-50 top-9 bg-white/10 w-[984px] mx-auto py-3 flex justify-center items-center rounded-full'>
 
             <ul className=' flex justify-center items-center  gap-x-20'>
                 <li>
