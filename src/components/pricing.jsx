@@ -9,7 +9,10 @@ const Pricing = () => {
                 <p className="text-[#C3C3C3] pt-5 pb-8 text-xl md:text-2xl font-light">
                     Every project is unique, and so is our pricing. We tailor our services to meet your <br className="md:block hidden" /> specific needs, ensuring you get the best value for your investment.
                 </p>
-                <Button>Get A Quote</Button>
+                <a href="https://calendly.com/contact-vfxion/30min?back=1&month=2024-07">
+
+                    <Button>Get A Quote</Button>
+                </a>
             </div>
         </div>
     )

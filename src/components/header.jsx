@@ -9,7 +9,7 @@ const Header = () => {
     const [Open, setOpen] = useState(false);
 
     return (
-        <div className='sticky backdrop-blur-md left-4 z-50 top-4 md:top-9 bg-white/10 md:w-[984px] mx-auto py-3 px-4 flex justify-between md:justify-center items-center rounded-full'>
+        <div className='sticky md:h-[73px] backdrop-blur-md left-4 z-50 top-4 md:top-9 bg-white/10 md:w-[984px] mx-auto py-3 px-4 flex justify-between md:justify-center items-center rounded-full'>
             <div className='md:hidden block'>
                 <img className='max-w-[40px]' src={logo} alt='vfxion-logo' />
 
@@ -36,7 +36,10 @@ const Header = () => {
 
                 </li>
                 <li className='md:block hidden'>
-                    <img className='max-w-[67px]' src={logo} alt='vfxion-logo' />
+                    <a href="#hero">
+
+                        <img className='max-w-[67px]' src={logo} alt='vfxion-logo' />
+                    </a>
                 </li>
                 <li>
                     <a href="#pricing">
