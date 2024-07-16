@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import Balancer from 'react-wrap-balancer'
 import coverImg from '../assets/expertise/IMG-VFXion.jpg'
 const WhyChooseUs = () => {
     return (
@@ -9,7 +10,9 @@ const WhyChooseUs = () => {
                     How do we make you go <br className='md:block hidden' />  VIRAL with VFX / CGI ?!
                 </h2>
                 <p className="text-xl md:text-2xl leading-[28px] font-light">
-                    At VFXion, we specialize in creating VFX/CGI videos <br className='md:block hidden' /> combined with a creative marketing approach. By  <br className='md:block hidden' />  integrating a meaningful story, we captivate and <br className='md:block hidden' />  differentiate the presentation of your product or <br className='md:block hidden' />  service, making the promotion seamless and engaging. <br className='md:block hidden' />  Elevate your brand's presence and experience the new <br className='md:block hidden' />  vision of fiction that drives viral success.
+                    <Balancer>
+                        At VFXion, we specialize in creating VFX/CGI videos  combined with a creative marketing approach. By    integrating a meaningful story, we captivate and   differentiate the presentation of your product or   service, making the promotion seamless and engaging.   Elevate your brand's presence and experience the new   vision of fiction that drives viral success.
+                    </Balancer>
                 </p>
             </div>
             <div className="md:order-last order-first ">
