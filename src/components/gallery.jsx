@@ -1,9 +1,5 @@
-// import image1 from '../assets/gallery/Frame 5.jpg'
-// import image2 from '../assets/gallery/Frame 8.jpg'
-// import image3 from '../assets/gallery/Frame 6.jpg'
-// import image4 from '../assets/gallery/Frame 7.jpg'
+
 import { useEffect, useRef } from 'react'
-import video1 from '../assets/gallery/Ads.mp4'
 import video2 from '../assets/gallery/Kahf.mp4'
 import video6 from '../assets/gallery/Ketch.video.mp4'
 import video3 from '../assets/gallery/Orange Julep.mp4'
@@ -13,18 +9,8 @@ import video5 from '../assets/gallery/Yoko Luna X F1.mp4'
 
 const Gallery = () => {
 
-    // const slides = [
-    //     image1,
-    //     image3,
-    //     image4,
-    //     image2,
-    //     image1,
-    //     image3,
-    //     image4,
-    //     image2,
-    // ]
+
     const slides = [
-        video1,
         video2,
         video3,
         video4,
