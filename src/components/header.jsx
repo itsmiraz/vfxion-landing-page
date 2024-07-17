@@ -21,14 +21,14 @@ const Header = () => {
                     }
                 </button>
             </div>
-            <ul className={`${Open ? 'block' : "hidden"}  bg-white/10  z-20 md:flex  md:static  absolute md:bg-transparent  right-4  top-14 w-fit px-5 py-5 rounded-xl md:space-y-0 space-y-2  md:text-xl text-white text-sm flex md:flex-row flex-col justify-center  items-center  gap-x-20`}>
-                <li>
+            <ul className={`${Open ? 'block' : "hidden"}  bg-white/10   z-20 md:flex  md:static  absolute md:bg-transparent  right-4  top-14 w-fit px-5 py-5 rounded-xl md:space-y-0 space-y-2  md:text-xl text-white text-sm flex md:flex-row flex-col justify-center  items-center  gap-x-20`}>
+                <li onClick={() => setOpen(false)}>
                     <a href="#whychooseUs">
 
                         <p className=''>Why Us?</p>
                     </a>
                 </li>
-                <li>
+                <li onClick={() => setOpen(false)}>
                     <a href="#gallery">
 
                         <p className=''>Gallery</p>
@@ -41,7 +41,7 @@ const Header = () => {
                         <img className='max-w-[67px]' src={logo} alt='vfxion-logo' />
                     </a>
                 </li>
-                <li>
+                <li onClick={() => setOpen(false)}>
                     <a href="#pricing">
 
                         <p className=''>Pricing</p>
@@ -49,7 +49,7 @@ const Header = () => {
 
 
                 </li>
-                <li>
+                <li onClick={() => setOpen(false)}>
                     <a href="#aboutUs">
 
                         <p className=''>About Us</p>
